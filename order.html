@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>simplefrom</title>
+    <style>
+        .wufoo{ 
+            font-family:'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <from name="order" method="get" action="simplefrom.html" class="wufoo">
+        <h2>Order Form</h2>
+        <p>What would you like to buy?</p>
+        <select style="width:150px;"> 
+            <option value=" " >A</option>
+            <option>B (+0.5$)</option>
+            <option>C (+0.5$)</option>
+        </select>
+        </br>
+        <p>How many would you like to order?</p>
+            <label><input name="rd" type="radio"/>1-$10</label></br>
+            <label><input name="rd" type="radio"/>2-$20</label></br>
+            <label><input name="rd" type="radio"/>3-$25</label></br>
+        <p>Name<span style="color: red;">*</span></p></from>
+            <input name="FirstName" type="text" size="15" placeholder="FirstName"/>
+            <input name="LastName" type="text" size="15"  placeholder="LastName"/>
+        <p>Email</p>
+            <input name="email" type="text" size="36" placeholder="exam@gmail.com"/>
+        <p>Phone Number</p>
+            <input name="phone1" type="text" size="3"/> -
+            <input name="phone2" type="text" size="3"/> -
+            <input name="phone3" type="text" size="3"/>
+        </br></br>
+            <input name="data" type="submit"/>
+
+    </from>
+</body>
+</html>
