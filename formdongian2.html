@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table{
+            border: 5px solid white;
+            width: 100%;  
+        }
+        th{
+            color: blue;
+            font-family:'Times New Roman', Times, serif;
+            font-size: large;
+            
+        }
+        h3{
+            padding: 10px;
+            text-align: left;
+            background: rgb(159, 226, 231);
+            margin-top: 0px;
+            margin-bottom: auto;
+        }
+        td:nth-child(odd){
+            color: blue;
+        }
+        .khoi{
+            background: rgb(241, 227, 142);
+            width: 500px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="khoi">
+        <form action="#" method="Get">
+            <table cellpadding="5px" >
+                <tr>
+                    <th colspan="2"><h3>ĐĂNG KÝ THẺ HỌC VIÊN</h2></th>
+                </tr>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input name="hoten" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td>
+                        <input name="birthday" type="date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <label><input name="sex" type="radio" checked />Nam</label>
+                        <label><input name="sex" type="radio" />Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="transform: translateY(-20px);">Địa chỉ</td>
+                    <td>
+                        <textarea name="address" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lớp</td>
+                    <td>
+                        <select name="class">
+                            <option>-Chọn lớp-</option>
+                            <option>HTML/CSS cơ bản</option>
+                            <option>Python</option>
+                            <option>Javascript cơ bản</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input name="mail" type="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td>
+                        <input name="phone" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input name="regacc" type="submit" value="Dăng ký" />
+                        <input name="reset" type="reset" value="Nhập lại" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
