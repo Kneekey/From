@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bài Form 2</title>
+    <style>
+        div{
+            width: 700px;
+            height: 100%;
+            border: 5px solid blue;
+            margin: 0px auto;
+        }
+        h1{
+            margin-left: 10px;
+            font-size: 40px;
+        }
+        fieldset{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+        legend{
+            color: blue;
+        }
+        .td_red{
+            color: red;
+        }
+        .submit, .reset{
+            width: 200px;
+            margin: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Reservation Request</h1>
+        <fieldset name="form_1">
+            <legend><b>General Information</b></legend>
+            <table cellpadding="5px">
+                <tr>
+                    <td>Arrival date:</td>
+                    <td><input type="date" name="date"/></td>
+                    <td class="td_red">Arrival date is invalid.</td>
+                </tr>
+                <tr>
+                    <td>Nights:</td>
+                    <td><input type="text" name="nights"/></td>
+                    <td class="td_red">Nights must be a number.</td>
+                </tr>
+                <tr>
+                    <td>Adults:</td>
+                    <td>
+                        <select name="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Children:</td>
+                    <td>
+                        <select name="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset name="form_2">
+            <legend><b>Preferences</b></legend>
+            <table cellpadding="5px">
+                <tr>
+                    <td>Room type:</td>
+                    <td>
+                        <input name="Prefer" type="radio" checked /><span>Standard</span>
+                        <input name="Prefer" type="radio" /><span>Business</span>
+                        <input name="Prefer" type="radio" /><span>Suite</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bed type:</td>
+                    <td>
+                        <input name="Bed" type="radio" checked /><span>King</span>
+                        <input name="Bed" type="radio" /><span>DoubleDouble</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="Smok" type="checkbox" /><span>Smoking</span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset name="form_3">
+            <legend><b>Contact Information</b></legend>
+            <table cellpadding="5px">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"/></td>
+                    <td class="td_red">Name is required.</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="mail"/></td>
+                    <td class="td_red">Email address is invaild.</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td><input type="text" name="text"/></td>
+                    <td class="td_red">Phone number is invaild.</td>
+                </tr>
+            </table>
+        </fieldset>
+        <input class="submit" name="senddata" type="submit" value="Submit Reservation" />
+        <input class="reset" name="reset" type="reset" value="Clear" />
+    </div>
+</body>
+</html>
