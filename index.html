@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="container">
+        <div class="left">
+            <div class="header">
+                <div class="logo">
+                    <ion-icon name="paw"></ion-icon>
+                </div>
+                <h3>PAWTASTIC</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <ion-icon name="ellipse"></ion-icon>
+                        <a href="#">Human profile</a>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipse"></ion-icon>
+                        <a href="#">Pet basics</a>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipse"></ion-icon>
+                        <a href="#">Pet details</a>
+                    </li>
+                    <li>
+                        <ion-icon name="ellipse"></ion-icon>
+                        <a href="#">Confirm</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="save">
+                <a href="#">Save and exit</a>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Yay, we love dogs! Give us the basics about your pup.</h1>
+            <div class="info__top">
+                <form action="#" method="GET">
+                    <div class="form-item name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Pet's name">
+                    </div>
+                    <div class="form-item upload">
+                        <input type="file" id="photo" name="photo">
+                        <label for="photo">
+                            <div class="form-camera"><ion-icon name="camera"></ion-icon></div>
+                            <span>Upload a photo</span>
+                        </label>
+                    </div>
+                    <div class="form-item breed">
+                        <label for="name">Breed</label>
+                        <input type="text" id="breed" name="breed" placeholder="Pet's breed">
+                    </div>
+                    <div class="form-item birthday">
+                        <label for="bir">Birthday</label>
+                        <input type="date" class="unstyled" id="bir" name="bir">
+                    </div>
+                    <div class="form-item sex">
+                        <span>Gender</span>
+                        <div class="sex-box">
+                            <input type="radio" id="female" name="sex" checked /><label for="female">Female</label>
+                            <input type="radio" id="male" name="sex" /><label for="male">Male</label>
+                        </div>
+                    </div>
+                    <div class="form-item spayed">
+                        <span>Spayed and Neutered</span>
+                        <div class="spayed-box">
+                            <input type="radio" id="yes" name="spayed" checked/><label for="yes">Yes</label>
+                            <input type="radio" id="no" name="spayed" /><label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="form-item weight">
+                        <span>Weight</span>
+                        <div class="weight-box">
+                            <input type="radio" id="1" name="weight" checked /><label for="1">0-25 lbs</label>
+                            <input type="radio" id="2" name="weight" /><label for="2">25-50 lbs</label>
+                            <input type="radio" id="3" name="weight" /><label for="3">50-100 lbs</label>
+                            <input type="radio" id="4" name="weight" /><label for="4">100+ lbs</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="info__bottom">
+                <div class="info__bottom--item">
+                    <button>Back</button>
+                </div>
+                <div class="info__bottom--item">
+                    <button>Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
