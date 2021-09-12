@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="form">
+        <h1>Create account</h1>
+        <p>Already have an account? <a href="#">Sign in</a></p>
+        <form action="#" method="GET" autocomplete="off">
+            <div class="midname">
+                <input type="text" name="midname" placeholder="Mid mame" />
+            </div>
+            <div class="name">
+                <input class="first" type="text" name="firstname" placeholder="First mame" />
+                <input class="last" type="text" name="lastname" placeholder="Last mame" />
+            </div>
+            <div class="email">
+                <input type="text" name="emmail" placeholder="E-mail" />
+            </div>
+            <div class="submit">
+                <input type="submit" name="submit" value="Sign in" />
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="law-box">
+                <input type="checkbox" name="law" id="law" />
+                <label for="law">I have read and agree to the <a href="#">Terms of Services</a> </label>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

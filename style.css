@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right top, #d96090, #b1976c, #fefcfc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form {
+  width: 350px;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#form h1 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#form > p {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #696869;
+}
+#form > p a {
+  color: #3958b4;
+}
+#form form .midname,
+#form form .name,
+#form form .email,
+#form form .submit {
+  margin: 15px 0;
+}
+#form form .midname input,
+#form form .email input,
+#form form .submit input {
+  width: 100%;
+}
+#form form .name input {
+  width: 49%;
+}
+#form form .midname input,
+#form form .email input,
+#form form .submit input,
+#form form .name input {
+  font-size: 15px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #ebeaeb;
+  box-shadow: 0 0 3px black;
+  transition: 0.25s linear;
+}
+#form form .midname input:focus,
+#form form .email input:focus,
+#form form .name input:focus {
+  background-color: white;
+}
+.midname input::-webkit-input-placeholder,
+.email input::-webkit-input-placeholder,
+.name input::-webkit-input-placeholder {
+  font-style: italic;
+}
+#form form .name {
+  display: flex;
+  justify-content: space-between;
+}
+#form form .name .first {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#form form .name .last {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+#form form .submit,
+#form .law-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#form form .submit input {
+  background-color: #6286e0;
+  color: white;
+  cursor: pointer;
+  box-shadow: none;
+}
+#form form .submit ion-icon {
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+  color: white;
+}
+#form .law-box {
+  justify-content: flex-start;
+  font-size: 13px;
+}
+#form .law-box input {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  color: #adadad;
+}
+#form .law-box label {
+  color: #8b8a8b;
+}
+#form .law-box label a {
+  text-decoration: none;
+  color: #3958b4;
+}
